@@ -3,6 +3,12 @@ import './index.css';
 import React from 'react'
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import HomePage from './screens/HomePage'
+import About from './screens/About';
+import Contact from './screens/Contact';
+import Projects from './screens/Projects';
+import Coding from './screens/Projects';
+import Design from './screens/Design';
+import Skills from './screens/Skills';
 
 function App() {
 
@@ -12,52 +18,69 @@ function App() {
     <BrowserRouter>
       <div className="app">
         <header className="app-header">
-        <Link to="/">
-            <button class="button">
-              <div class="button-content">
-                <p class="button__text">home</p>
+        <Link to="/homepage">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">home</p>
               </div>
             </button>
           </Link>
-          <Link to="/">
-            <button class="button">
-              <div class="button-content">
-                <p class="button__text">about</p>
+          <Link to="/about">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">about</p>
               </div>
             </button>
           </Link>
-          <Link to="/">
-            <button class="button">
-              <div class="button-content">
-                <p class="button__text">projects</p>
+          <Link to="/coding">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">coding</p>
               </div>
             </button>
           </Link>
-          <Link to="/">
-            <button class="button">
-              <div class="button-content">
-                <p class="button__text">blog</p>
+          <Link to="/design">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">designs</p>
               </div>
             </button>
           </Link>
-          <Link to="/">
-            <button class="button">
-              <div class="button-content">
-                <p class="button__text">contact</p>
+          <Link to="/blog">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">blog</p>
               </div>
             </button>
           </Link>
-          <Link to="/">
-            <button class="button">
-              <div class="button-content">
-                <p class="button__text">skills</p>
+          <Link to="/contact">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">contact</p>
+              </div>
+            </button>
+          </Link>
+          <Link to="/skills">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">skills</p>
               </div>
             </button>
           </Link>
         </header>
+
         <main>
-          <HomePage />
+
+            <Route path="/about" component={About} exact></Route>
+            <Route path="/coding" component={Coding} exact></Route>
+            <Route path="/projects" component={Projects} exact></Route>
+            <Route path="/design" component={Design} exact></Route>
+            <Route path="/contact" component={Contact} exact></Route>
+            <Route path="/skills" component={Skills} exact></Route>
+            <Route path="/homepage" component={HomePage} exact></Route>
+            <Route path="/" component={HomePage} exact></Route>
         </main>
+
         <footer>
           <p>&copy; {year}</p>
           <p>John T. Lovato</p>
