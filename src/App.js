@@ -9,6 +9,7 @@ import Projects from './screens/Projects';
 import Coding from './screens/Projects';
 import Design from './screens/Design';
 import Skills from './screens/Skills';
+import NotFound from './screens/NotFound';
 
 function App() {
 
@@ -70,7 +71,7 @@ function App() {
         </header>
 
         <main>
-
+          <Switch>
             <Route path="/about" component={About} exact></Route>
             <Route path="/coding" component={Coding} exact></Route>
             <Route path="/projects" component={Projects} exact></Route>
@@ -78,7 +79,8 @@ function App() {
             <Route path="/contact" component={Contact} exact></Route>
             <Route path="/skills" component={Skills} exact></Route>
             <Route path="/homepage" component={HomePage} exact></Route>
-            <Route path="/" component={HomePage} exact></Route>
+            <Route component={NotFound} />
+            <Route path="/" component={HomePage} exact></Route>          </Switch>
         </main>
 
         <footer>
