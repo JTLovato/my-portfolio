@@ -109,7 +109,8 @@ main {
   min-height: 95vh;
   /* REMOVE AFTER DONE, PURELY FOR TESTING */
   background-color: #ececec;
-  padding: 50px;
+  padding: 50px 100px;
+
 }
 
 .homepage {
@@ -295,11 +296,57 @@ main {
   transition: all 0.15s;
 }
 
-
-
-
-
 /* End Of Contact Page */
+
+/* 404 Page */
+
+.not-found {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.not-found-info {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ececec;
+  max-width: 700px;
+}
+
+.not-found img {
+  width: 450px;
+  height: 600px;
+}
+
+.not-found-info h1,
+.not-found-info h3,
+.not-found-info p {
+  width: 100%;
+  text-align: center;
+  color: #7a7a7a;
+}
+
+.not-found-info h1 {
+  font-family: 'Great Vibes', cursive;
+  margin: 0;
+  font-size: 15rem;
+}
+
+.not-found-info h3 {
+  font-size: 1.5rem;
+}
+
+.not-found-info p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+}
+
+
+
+
+/* End of 404 Page */
 
 /* End of Individual Pages */
 

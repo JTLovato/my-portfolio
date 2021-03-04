@@ -10,6 +10,7 @@ import Coding from './screens/Projects';
 import Design from './screens/Design';
 import Skills from './screens/Skills';
 import NotFound from './screens/NotFound';
+import Blog from './screens/Blog';
 
 function App() {
 
@@ -23,13 +24,6 @@ function App() {
             <button className="button">
               <div className="button-content">
                 <p className="button__text">home</p>
-              </div>
-            </button>
-          </Link>
-          <Link to="/about">
-            <button className="button">
-              <div className="button-content">
-                <p className="button__text">about</p>
               </div>
             </button>
           </Link>
@@ -68,6 +62,13 @@ function App() {
               </div>
             </button>
           </Link>
+          <Link to="/about">
+            <button className="button">
+              <div className="button-content">
+                <p className="button__text">about</p>
+              </div>
+            </button>
+          </Link>
         </header>
 
         <main>
@@ -75,6 +76,7 @@ function App() {
             <Route path="/about" component={About} exact></Route>
             <Route path="/coding" component={Coding} exact></Route>
             <Route path="/projects" component={Projects} exact></Route>
+            <Route path="/blog" component={Blog} exact></Route>
             <Route path="/design" component={Design} exact></Route>
             <Route path="/contact" component={Contact} exact></Route>
             <Route path="/skills" component={Skills} exact></Route>

@@ -9,14 +9,6 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/about.png" className="opaque-text"></img>
-                    </div>
-                </div>
-            </div>
-
-            <div className="card-around">
-                <div className="card-container">
-                    <div className="opaque">
                         <img src="/img/projects.png" className="opaque-text"></img>
                     </div>
                 </div>
@@ -50,6 +42,14 @@ export default function HomePage() {
                 <div className="card-container">
                     <div className="opaque">
                         <img src="/img/skills.png" className="opaque-text"></img>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="card-around">
+                <div className="card-container">
+                    <div className="opaque">
+                        <img src="/img/about.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>
