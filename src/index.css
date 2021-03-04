@@ -230,7 +230,7 @@ main {
 
 .about-info p {
   color: #7a7a7a;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .about-info p span {
@@ -343,10 +343,218 @@ main {
   font-size: 3rem;
 }
 
-
-
-
 /* End of 404 Page */
+
+/* Skills Page */
+
+.skills-page {
+  margin-top: 100px;
+}
+
+.skills-info-container,
+.top-skill-container,
+.skill-info {
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  text-align: center;
+}
+
+.skills-info-container {
+  justify-content: space-around;
+  padding: 0 100px;
+}
+
+.outline {
+  width: 400px;
+  padding: 5px;
+  background: rgb(122,122,122);
+  background: linear-gradient(0deg, rgba(204,204,204,1) 0%, rgba(236,236,236,1) 30%, rgba(236,236,236,1) 70%, rgba(204,204,204,1) 100%); 
+}
+
+.skill-info {
+  width: 390px;
+  height: 100%;
+  background-color: #ececec;
+}
+
+.skill-info h1 {
+  width: 200px;
+  margin: 0 100px;
+  background-color: #ececec;
+  position: relative;
+  top: -25px;
+}
+
+.skill-info h3 {
+  width: 150px;
+  margin: 0 125px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.skill-line {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  margin: 5px 50px 15px;
+  border-radius: 3px;
+  background-color: #afafaf;
+}
+
+.skill-line-full {
+  position: relative;
+  height: 40px;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+.skill-html,
+.skill-css,
+.skill-react,
+.skill-js,
+.skill-git,
+.skill-mongo,
+.skill-node,
+.skill-ps,
+.skill-il,
+.skill-id,
+.skill-sk,
+.skill-fi,
+.skill-xd,
+.skill-hd, 
+.skill-comm,
+.skill-punc,
+.skill-mana,
+.skill-orga,
+.skill-prso,
+.skill-dema,
+.skill-tima{
+  background: rgb(203,176,151);
+  background: linear-gradient(90deg, rgba(203,176,151,1) 0%, rgba(255,236,191,1) 100%); 
+  left: 0;
+  top: 0;
+  border-radius: 3px 8px 8px 3px;
+}
+
+.skill-html {
+  width: 90%;
+}
+.skill-css {
+  width: 85%;
+}
+.skill-react {
+  width: 60%;
+}
+.skill-js {
+  width: 65%;
+}
+.skill-git {
+  width: 25%;
+}
+.skill-mongo {
+  width: 5%;
+}
+.skill-node {
+  width: 10%;
+}
+
+.skill-ps {
+  width: 95%;
+}
+.skill-il {
+  width: 85%;
+}
+.skill-id {
+  width: 50%;
+}
+.skill-sk {
+  width: 35%;
+}
+.skill-fi {
+  width: 45%;
+}
+.skill-xd {
+  width: 25%;
+}
+.skill-hd {
+  width: 50%;
+}
+
+.skill-comm {
+  width: 99%;
+}
+.skill-punc {
+  width: 99%;
+}
+.skill-mana {
+  width: 80%;
+}
+.skill-orga {
+  width: 75%;
+}
+.skill-prso {
+  width: 90%;
+}
+.skill-dema {
+  width: 80%;
+}
+.skill-tima {
+  width: 90%;
+}
+
+/* End Of Skills Page */
+
+/* Coding Page */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.modal.show {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-content {
+  width: 500px;
+  background-color: #fff;
+  transform: translateY(-200px);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.modal-header, 
+.modal-footer {
+  padding: 10px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* End of Coding Page */
 
 /* End of Individual Pages */
 

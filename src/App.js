@@ -5,8 +5,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import HomePage from './screens/HomePage'
 import About from './screens/About';
 import Contact from './screens/Contact';
-import Projects from './screens/Projects';
-import Coding from './screens/Projects';
+import Coding from './screens/Coding';
 import Design from './screens/Design';
 import Skills from './screens/Skills';
 import NotFound from './screens/NotFound';
@@ -75,7 +74,6 @@ function App() {
           <Switch>
             <Route path="/about" component={About} exact></Route>
             <Route path="/coding" component={Coding} exact></Route>
-            <Route path="/projects" component={Projects} exact></Route>
             <Route path="/blog" component={Blog} exact></Route>
             <Route path="/design" component={Design} exact></Route>
             <Route path="/contact" component={Contact} exact></Route>
