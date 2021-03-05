@@ -255,15 +255,37 @@ main {
   margin-top: 75px;
 }
 
+.contact-container h1 {
+  position: relative;
+  z-index: 3;
+}
+
 .contact-container a {
   height: 500px;
   width: 250px;
   position: relative;
 }
 
+.bg-color {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  min-width: 2000px;
+  min-height: 2000px;
+  overflow: hidden;
+  z-index:0;
+}
+
 .contact-container a img {
    height: 500px;
    width: 250px;
+   z-index: 2;
 }
 
 .contact-container a .color  {
@@ -294,6 +316,42 @@ main {
   right: 0px;
   left: 0px;
   transition: all 0.15s;
+}
+
+.contact-container .mail:hover .bg-mail {
+  opacity: 1;
+  background: rgb(60,17,13);
+  background: linear-gradient(157deg, rgba(60,17,13,1) 0%, rgba(152,44,34,1) 33%); 
+}
+
+.contact-container .call:hover .bg-call {
+  opacity: 1;
+  background: rgb(75,35,0);
+background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%); 
+}
+
+.contact-container .address:hover .bg-address {
+  opacity: 1;
+  background: rgb(83,78,3);
+  background: linear-gradient(157deg, rgba(83,78,3,1) 0%, rgba(200,188,8,1) 33%); 
+}
+
+.contact-container .linkedin:hover .bg-linkedin {
+  opacity: 1;
+  background: rgb(11,68,12);
+  background: linear-gradient(157deg, rgba(11,68,12,1) 0%, rgba(26,155,28,1) 33%); 
+}
+
+.contact-container .twitter:hover .bg-twitter {
+  opacity: 1;
+  background: rgb(9,49,75);
+  background: linear-gradient(157deg, rgba(9,49,75,1) 0%, rgba(22,125,191,1) 33%); 
+}
+
+.contact-container .github:hover .bg-github {
+  opacity: 1;
+  background: rgb(33,0,33);
+  background: linear-gradient(157deg, rgba(33,0,33,1) 0%, rgba(83,1,83,1) 33%); 
 }
 
 /* End Of Contact Page */
@@ -508,6 +566,43 @@ main {
 
 /* Coding Page */
 
+.coding-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coding-container {
+  height: 244px;
+  width: 504px;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.coding-container button img {
+  height: 240px;
+  width: 500px;
+  transition: all 0.2s ease-in-out;
+}
+
+.coding-container:hover {
+  padding: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.coding-container button img:hover {
+  height: 244px;
+  width: 504px;
+  transition: all 0.2s ease-in-out;
+}
+
+.coding-button {
+  padding: 0px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -521,6 +616,7 @@ main {
   opacity: 0;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
+  z-index: 10;
 }
 
 .modal.show {
@@ -529,19 +625,22 @@ main {
 }
 
 .modal-content {
-  width: 500px;
+  max-width: 400px;
   background-color: #fff;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
+  height: 90%;
+  overflow-Y: scroll;
+  overflow-x: hidden;
+  margin: 20px;
+}
+
+.modal-header img {
+  max-width: 400px;
 }
 
 .modal.show .modal-content {
   transform: translateY(0);
-}
-
-.modal-header, 
-.modal-footer {
-  padding: 10px;
 }
 
 .modal-title {
@@ -550,8 +649,32 @@ main {
 
 .modal-body {
   padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.modal-body a {
+  color: #fff;
+  background-color: #7a7a7a;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 2px 15px;
+  cursor: pointer;
+}
+
+.modal-body a:hover {
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.modal-info h1 {
+  color: #7a7a7a;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.modal-info p {
+  color: #888;
+  font-size: 1.3rem;
 }
 
 /* End of Coding Page */

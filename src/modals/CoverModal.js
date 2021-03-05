@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TheGoalieMaskProjectModal = props => {
+const CoverModal = props => {
 
     return (
         <div className={`modal ${props.show ? 'show' : ''}`} onClick={props.onClose}>
@@ -12,15 +12,15 @@ const TheGoalieMaskProjectModal = props => {
                     <a href={props.href}>Let Me See It</a>
                     <div className="modal-info">
                         <h1>What Was Your Goal?</h1>
-                        <p>To make a sleek site for hockey goalie mask lovers.</p>
+                        <p>To create a static site wireframe that focused on several users uploading covers of their favorite songs, a la YouTube or Spotify.</p>
                         <h1>What Did You Use To Do It?</h1>
-                        <p>HTML, CSS, Javascript</p>
+                        <p>HTML, CSS, Javascript, API, BootStrap</p>
                         <h1>What Did You Learn?</h1>
-                        <p>This was one of my first real javascript sites, so there's a lot of functionality that is connected to JS.</p>
+                        <p>Uploading music is tricky. Using an API it pulls in several fake profiles to populate a "For You" section.</p>
                         <h1>How Can It Be Better?</h1>
-                        <p>I linked to several HTML pages, I can make them a lot less to save on loading times. Make the images smaller and responsive. Make it better for mobile, and fix the layout.</p>
+                        <p>Take it from wireframe to actual server based site where people can create their own profiles and upload their music. Animations could've been better.</p>
                         <h1>What Did You Love About It?</h1>
-                        <p>For the first real JS project it's not too bad. The design is good and the white looks amazing. Some mobile parts looks nice.</p>
+                        <p>Happy with the colors and designs. </p>
                     </div>
                 </div>
                 <div className="modal-body">
@@ -31,4 +31,4 @@ const TheGoalieMaskProjectModal = props => {
     )
 }
 
-export default TheGoalieMaskProjectModal
+export default CoverModal
