@@ -6,7 +6,7 @@ const ZeroGBarModal = props => {
         <div className={`modal ${props.show ? 'show' : ''}`} onClick={props.onClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                 <div className="modal-header">
-                    <img src={props.src} className="modal-image"></img>
+                    <img src={props.src} alt={props.alt} className="modal-image"></img>
                 </div>
                 <div className="modal-body">
                     <a href={props.href}>Let Me See It</a>

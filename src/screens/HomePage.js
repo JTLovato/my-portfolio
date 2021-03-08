@@ -9,7 +9,7 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/projects.png" className="opaque-text"></img>
+                        <img alt="Projects Icon" src="/img/projects.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/designs.png" className="opaque-text"></img>
+                        <img alt="Designs Icon" src="/img/designs.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/blog.png" className="opaque-text"></img>
+                        <img alt="Blog" src="/img/blog.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/contact.png" className="opaque-text"></img>
+                        <img alt="contact Icon" src="/img/contact.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/skills.png" className="opaque-text"></img>
+                        <img alt="skills icon" src="/img/skills.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ export default function HomePage() {
             <div className="card-around">
                 <div className="card-container">
                     <div className="opaque">
-                        <img src="/img/about.png" className="opaque-text"></img>
+                        <img alt="About Icon" src="/img/about.png" className="opaque-text"></img>
                     </div>
                 </div>
             </div>

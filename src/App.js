@@ -71,7 +71,7 @@ function App() {
         </header>
 
         <main>
-          <Switch>
+          <Switch>   
             <Route path="/about" component={About} exact></Route>
             <Route path="/coding" component={Coding} exact></Route>
             <Route path="/blog" component={Blog} exact></Route>
@@ -79,8 +79,9 @@ function App() {
             <Route path="/contact" component={Contact} exact></Route>
             <Route path="/skills" component={Skills} exact></Route>
             <Route path="/homepage" component={HomePage} exact></Route>
-            <Route component={NotFound} />
-            <Route path="/" component={HomePage} exact></Route>          </Switch>
+            <HomePage path="/"exact></HomePage>    
+            <Route component={NotFound} />   
+          </Switch>
         </main>
 
         <footer>

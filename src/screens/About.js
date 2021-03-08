@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function About() {
 
-    var one_day = 1000 * 60 * 60 * 24 
-    var present_date = new Date(); 
-    var creation = new Date(1986, 5, 19) 
-    var Result = Math.round( present_date.getTime() - creation.getTime()) / (one_day); 
-    var Final_Result = Result.toFixed(0); 
+    const one_day = 1000 * 60 * 60 * 24 
+    const present_date = new Date(); 
+    const creation = new Date(1986, 5, 19) 
+    const Result = Math.round( present_date.getTime() - creation.getTime()) / (one_day); 
+    const Final_Result = Result.toFixed(0); 
     let birthday = (Final_Result); 
     
     return (
@@ -18,6 +18,7 @@ export default function About() {
                     <img
                         className="about-pic"
                         src="../img/me.png"
+                        alt="A Profile Shot Of Me, John T Lovato"
                     />
                 <div className="about-info-container">
                     <div className="about-info">
