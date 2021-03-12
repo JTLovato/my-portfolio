@@ -2,6 +2,7 @@
 import './index.css';
 import React from 'react'
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import DelayLink from 'react-delay-link';
 import HomePage from './screens/HomePage'
 import About from './screens/About';
 import Contact from './screens/Contact';
@@ -15,59 +16,71 @@ function App() {
 
   const year = new Date().getFullYear();
 
+
+  const sliderHandler = () => {
+    const slider = document.getElementById('slider');
+     slider.classList.add('slider-close');
+      setTimeout(RemoveClass, 1000)
+    }
+    function RemoveClass() {
+      const slider = document.getElementById('slider');
+      slider.classList.remove('slider-close')
+    }
+  
+
   return (
     <BrowserRouter>
       <div className="app">
         <header className="app-header">
-        <Link to="/homepage">
-            <button className="button">
+        <DelayLink delay={300} to="/homepage" >
+            <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">home</p>
               </div>
             </button>
-          </Link>
-          <Link to="/coding">
-            <button className="button">
+          </DelayLink>
+          <DelayLink delay={300} to="/coding" >
+          <button className="button" onClick={sliderHandler}>
               <div className="button-content">
                 <p className="button__text">coding</p>
               </div>
             </button>
-          </Link>
-          <Link to="/design">
-            <button className="button">
+          </DelayLink>
+          <DelayLink delay={300} to="/design" >
+          <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">designs</p>
               </div>
             </button>
-          </Link>
-          <Link to="/blog">
-            <button className="button">
+          </DelayLink>
+          <DelayLink delay={300} to="/blog" >
+          <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">blog</p>
               </div>
             </button>
-          </Link>
-          <Link to="/contact">
-            <button className="button">
+          </DelayLink>
+          <DelayLink delay={300} to="/contact" >
+          <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">contact</p>
               </div>
             </button>
-          </Link>
-          <Link to="/skills">
-            <button className="button">
+          </DelayLink>
+          <DelayLink delay={300} to="/skills" >
+          <button className="button" onClick={sliderHandler}>
               <div className="button-content">
                 <p className="button__text">skills</p>
               </div>
             </button>
-          </Link>
-          <Link to="/about">
-            <button className="button">
+          </DelayLink>
+          <DelayLink delay={300} to="/about" >
+          <button className="button" onClick={sliderHandler}>
               <div className="button-content">
                 <p className="button__text">about</p>
               </div>
             </button>
-          </Link>
+          </DelayLink>
         </header>
 
         <main>
@@ -82,6 +95,8 @@ function App() {
             <HomePage path="/"exact></HomePage>    
             <Route component={NotFound} />   
           </Switch>
+          <div id="slider-left" className="" ></div>
+          <div id="slider" className="" ></div>
         </main>
 
         <footer>

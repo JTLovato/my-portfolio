@@ -1,132 +1,159 @@
 import React from 'react'
 
 export default function Skills() {
+
+
     return (
         <div className="skills-page">
             <div className="header">
                 <h1>skills</h1>
             </div>
-            <div className="skills-info-container">
-                <div className="outline">
-                    <div className="skill-info">
-                        <h1>code</h1>
-                        <h3>HTML</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-html">   
-                            </div>  
-                        </div>                        
-                        <h3>CSS</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-css">                               
-                            </div>
-                        </div>    
-                        <h3>React</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-react">                              
-                            </div>
-                        </div>    
-                        <h3>Javascript</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-js">                             
-                            </div>
-                        </div>    
-                        <h3>Git</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-git">                              
-                            </div>
-                        </div>    
-                        <h3>Mongo DB</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-mongo">                              
-                            </div>
-                        </div>    
-                        <h3>Node.JS</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-node">     
+            <div className="skill-card-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../img/codingcard.jpg" alt="" />
+                        </div>
+                        <div class="flip-card-back">
+                            <div className="card-lettering">
+                                <div className="card-letter">
+                                    <img src="../img/icons/acespade.png" alt="" />
+                                </div>
+                                <div className="inner-card-info">
+                                    <h3>Coding</h3> 
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/html.png" alt=""/>
+                                        <p>HTML</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/css.png" alt=""/>
+                                        <p>CSS</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/javascript.png" alt=""/>
+                                        <p>JavaScript</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/react.png" alt=""/>
+                                        <p>React</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/git.png" alt=""/>
+                                        <p>Git</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/nodejs.png" alt=""/>
+                                        <p>Node.Js</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/mongodb.png" alt=""/>
+                                        <p>Mongo DB</p>
+                                    </div>
+                                </div>
+                                <div className="card-letter-bottom">
+                                    <img src="../img/icons/acespade.png" alt="" />
+                                </div>
                             </div>
                         </div>
-                    </div>  
-                </div>
-                <div className="outline">
-                    <div className="skill-info">
-                        <h1>design</h1>
-                        <h3>Photoshop</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-ps">   
-                            </div>  
-                        </div>                        
-                        <h3>Illustrator</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-il">                               
+                        
+                    </div>
+                </div> 
+                
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../img/designcard.jpg" alt="" />
+                        </div>
+                        <div class="flip-card-back">
+                            <div className="card-lettering">
+                                <div className="card-letter">
+                                    <img src="../img/icons/aceheart.png" alt="" />
+                                </div>
+                                <div className="inner-card-info">
+                                    <h3>Design</h3> 
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/photoshop.png" alt=""/>
+                                        <p>Photoshop</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/illustrator.png" alt=""/>
+                                        <p>Illustrator</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/indesign.png" alt=""/>
+                                        <p>inDesign</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/sketch.png" alt=""/>
+                                        <p>Sketch</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/figma.png" alt=""/>
+                                        <p>Figma</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/xd.png" alt=""/>
+                                        <p>Xd</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/hand-drawn.png" alt=""/>
+                                        <p>Hand Drawn</p>
+                                    </div>
+                                </div>
+                                <div className="card-letter-bottom">
+                                    <img src="../img/icons/aceheart.png" alt="" />
+                                </div>
                             </div>
-                        </div>    
-                        <h3>InDesign</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-id">                              
-                            </div>
-                        </div>    
-                        <h3>Sketch</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-sk">                             
-                            </div>
-                        </div>    
-                        <h3>Figma</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-fi">                              
-                            </div>
-                        </div>    
-                        <h3>xd</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-xd">                              
-                            </div>
-                        </div>    
-                        <h3>Hand Drawn</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-hd">     
+                        </div>
+                        
+                    </div>
+                </div> 
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../img/skillcard.jpg" alt="" />
+                        </div>
+                        <div class="flip-card-back">
+                            <div className="card-lettering">
+                                <div className="card-letter">
+                                    <img src="../img/icons/aceclub.png" alt="" />
+                                </div>
+                                <div className="inner-card-info">
+                                    <h3>Soft Skills</h3> 
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/communication.png" alt=""/>
+                                        <p>Communication</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/critical-thinking.png" alt=""/>
+                                        <p>Crit. Thinking</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/managing.png" alt=""/>
+                                        <p>Managing</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/organization.png" alt=""/>
+                                        <p>Organization</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/problem-solving.png" alt=""/>
+                                        <p>Prob Solving</p>
+                                    </div>
+                                    <div className="skill-stats">
+                                        <img src="../img/icons/timely.png" alt=""/>
+                                        <p>Time MGMT</p>
+                                    </div>
+                                </div>
+                                <div className="card-letter-bottom">
+                                    <img src="../img/icons/aceclub.png" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="outline">
-                    <div className="skill-info">
-                        <h1>soft skills</h1>
-                        <h3>Communication</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-comm">   
-                            </div>  
-                        </div>                        
-                        <h3>Punctual</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-punc">                               
-                            </div>
-                        </div>    
-                        <h3>Managing</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-mana">                              
-                            </div>
-                        </div>    
-                        <h3>Organization</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-orga">                             
-                            </div>
-                        </div>    
-                        <h3>Problem Solving</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-prso">                              
-                            </div>
-                        </div>    
-                        <h3>Decision Making</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-dema">                              
-                            </div>
-                        </div>    
-                        <h3>Time Management</h3>
-                        <div className="skill-line">
-                            <div className="skill-line-full skill-tima">     
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> 
             </div>
         </div>
     )
