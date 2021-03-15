@@ -1,7 +1,7 @@
 
 import './index.css';
 import React from 'react'
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DelayLink from 'react-delay-link';
 import HomePage from './screens/HomePage'
 import About from './screens/About';
