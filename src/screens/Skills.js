@@ -9,12 +9,12 @@ export default function Skills() {
                 <h1>skills</h1>
             </div>
             <div className="skill-card-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
                             <img src="../img/codingcard.jpg" alt="" />
                         </div>
-                        <div class="flip-card-back">
+                        <div className="flip-card-back">
                             <div className="card-lettering">
                                 <div className="card-letter">
                                     <img src="../img/icons/acespade.png" alt="" />
@@ -60,12 +60,12 @@ export default function Skills() {
                 </div> 
                 
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
                             <img src="../img/designcard.jpg" alt="" />
                         </div>
-                        <div class="flip-card-back">
+                        <div className="flip-card-back">
                             <div className="card-lettering">
                                 <div className="card-letter">
                                     <img src="../img/icons/aceheart.png" alt="" />
@@ -110,12 +110,12 @@ export default function Skills() {
                     </div>
                 </div> 
 
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="flip-card-front">
                             <img src="../img/skillcard.jpg" alt="" />
                         </div>
-                        <div class="flip-card-back">
+                        <div className="flip-card-back">
                             <div className="card-lettering">
                                 <div className="card-letter">
                                     <img src="../img/icons/aceclub.png" alt="" />
