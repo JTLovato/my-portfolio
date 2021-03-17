@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Questrial', sans-serif;
   background-color: #f4f5f6;
   font-size: 14px;
   color: #e6e6e6;
@@ -494,6 +494,7 @@ background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%);
   border-radius: 6px;
   transition: transform 0.4s;
   cursor: pointer;
+  margin: 8px;
 }
 
 .flip-card:hover {
@@ -723,10 +724,6 @@ background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%);
   color: #7a7a7a;
 }
 
-.modal-xl {
-  max-width: 850px;
-}
-
 .code-modal-container {
   display: flex;
   flex-wrap: wrap;
@@ -930,7 +927,6 @@ background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%);
 
 .col {
   min-width: 400px;
-  max-width: 400px;
   margin-bottom: 15px;
 }
 
@@ -983,6 +979,202 @@ background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%);
 }
 
 /* End Of Design page */
+
+/* Blog Page */
+
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 95px;
+  transition: all 0.2s ease-in-out;
+  background-image: linear-gradient(rgba(255, 174, 0, 0), rgb(241, 173, 25));
+}
+
+.blog-col {
+  min-width: 300px;
+  max-width: 300px;
+  height: 420px;
+  margin: 10px;
+  padding: 5px;
+  position: relative;
+  background-color: #f7f7eb;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-col:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 6px 0px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-col:hover .image-overlay {
+  top: 310px;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-button {
+
+}
+
+.blog-button:hover {
+
+}
+
+.blog-card-deco {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 5px;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 40px 40px 0 0;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.blog-card {
+  width: 280px;
+  height: 400px;
+  background-color: rgb(5, 255, 17); /* In case something breaks I see it. */
+  border: none;
+  position: absolute;
+  bottom: 10px;
+}
+
+.blog-image-container {
+  /* Images must be 305pxh x 280pxw */
+  height: 305px;
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.blog-card-info {
+  color: #fff;
+  background-color: #202c3f;
+  font-family: "Major Mono Display", monospace;
+  text-transform: uppercase;
+  height: 100px;
+  border-radius: 0 0 5px 5px;
+  border-top: solid 5px #efa646;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 16px 12px 16px;
+}
+
+.modal-xl  {
+  max-width: 1032px;
+}
+
+.profile-shot {
+  border-radius: 50%;
+  border: solid 10px #ffffff;
+  width: 220px;
+  position: absolute;
+  top: 325px;
+  left: 30px;
+}
+
+.blog-modal-text {
+  color: rgb(54, 54, 54);
+  margin-top: 130px;
+  padding: 20px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.blog-modal-text p::first-letter {
+  margin-left: 30px;
+}
+
+.blog-modal-header-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  position: absolute;
+  right: 0;
+  margin: 10px 0;
+  color: black;
+  justify-content: right;
+  text-align: right;
+  padding-right: 30px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.blog-modal-header-info h2 {
+  font-size: 2.25rem;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+.blog-modal-header-info h4 {
+  font-size: 20px;
+  color: #7a7a7a;
+  margin-bottom: 3px;
+}
+
+.blog-modal-header-info p {
+  width: 100%;
+  color: #7a7a7a;
+}
+
+.blog-modal-specifics {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  text-align: right;
+  justify-content: right;
+  color: #7a7a7a;
+}
+
+.blog-socials {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-socials h2 {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.blog-socials ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.blog-socials ul li {
+  margin: 0 20px;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+.blog-socials ul li:hover {
+  background-color: #efa646;
+  transform: scale(1.05);
+}
+
+/* End Of Blog Page */
 
 /* End of Individual Pages */
 

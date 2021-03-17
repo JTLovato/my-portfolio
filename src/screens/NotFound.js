@@ -10,7 +10,7 @@ export default function NotFound() {
                 <h3>If this is a bug, please email me <a href="mailto: johnsawebdev@gmail.com">here.</a></h3>
                 <h3>If this was on purpose, congrats! You got to see my dog. His name is Big and he's a good boy.</h3> 
             </div>
-            <img src="./img/big.jpg" alt="My dog, Big, looking very confused at how you arrived here."></img>
+            <img src="../img/big.jpg" alt="My dog, Big, looking very confused at how you arrived here."></img>
         </div>
     )
 }

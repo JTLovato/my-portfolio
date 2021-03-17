@@ -10,7 +10,9 @@ import Coding from './screens/Coding';
 import Design from './screens/Design';
 import Skills from './screens/Skills';
 import NotFound from './screens/NotFound';
-import Blog from './screens/Blog';
+import BlogsList from './screens/BlogList';
+import BlogPage from './screens/BlogPage';
+
 
 function App() {
 
@@ -53,7 +55,7 @@ function App() {
               </div>
             </button>
           </DelayLink>
-          <DelayLink delay={300} to="/blog" >
+          <DelayLink delay={300} to="/blogs" >
           <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">blog</p>
@@ -87,7 +89,8 @@ function App() {
           <Switch>   
             <Route path="/about" component={About} exact></Route>
             <Route path="/coding" component={Coding} exact></Route>
-            <Route path="/blog" component={Blog} exact></Route>
+            <Route path="/blogs" component={BlogsList} exact></Route>
+            <Route path="/blogs/:id" component={BlogPage}></Route>
             <Route path="/design" component={Design} exact></Route>
             <Route path="/contact" component={Contact} exact></Route>
             <Route path="/skills" component={Skills} exact></Route>
