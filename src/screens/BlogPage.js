@@ -21,7 +21,6 @@ export default function BlogPage(props) {
 
   return (
     <div>
-      <DelayLink delay={300} to="../Blogs" onClick={sliderHandler}>Back to result</DelayLink>
       <div className="blog-container">
         <div className="blog-left half">
           <div className="blog-overlay"></div>
@@ -66,6 +65,9 @@ export default function BlogPage(props) {
                 </a>
               </li>
             </ul>
+            <div className="back-link">
+              <DelayLink id="back-link" delay={300} to="../Blogs" onClick={sliderHandler}>Back To Results</DelayLink>
+            </div>
           </div>
         </div>
 
