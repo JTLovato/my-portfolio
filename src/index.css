@@ -1080,6 +1080,7 @@ background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%);
 .blog-left {
   background-color: #f7f7f7;
   min-width: 400px;
+  max-width: 400px;
   position: relative;
   border: none;
 }
@@ -1096,7 +1097,7 @@ background: linear-gradient(157deg, rgba(75,35,0,1) 0%, rgba(201,94,0,1) 33%);
   height: 100%;
   transform: rotate(180deg);
   background: rgb(255,255,255);
-  background: linear-gradient(162deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); 
+  background: linear-gradient(162deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%); 
 }
 
 .blog-quote {
