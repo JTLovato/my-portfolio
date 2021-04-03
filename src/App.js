@@ -98,7 +98,6 @@ function App() {
             <HomePage path="/"exact></HomePage>    
             <Route component={NotFound} />   
           </Switch>
-          <div id="slider-left" className="" ></div>
           <div id="slider" className="" ></div>
         </main>
 

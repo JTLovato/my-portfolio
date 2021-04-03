@@ -26,9 +26,9 @@ export default function BlogPage(props) {
           <div className="blog-overlay"></div>
           <img src={blog.src} alt="" />
           <h1 className="blog-quote">
-            <img src="../img/quotes.png" />
+            <img src="../img/quotes.png" alt="" />
             {blog.quote}
-            <img src="../img/quotes.png" />
+            <img src="../img/quotes.png" alt="" />
           </h1>
         </div>
 
