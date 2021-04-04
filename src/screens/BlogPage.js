@@ -40,6 +40,9 @@ export default function BlogPage(props) {
           </div>
           <div className="blog-text-container">
             <p className="blog-text">{blog.text}</p>
+            <div className="back-link">
+              <DelayLink id="back-link" delay={300} to="../Blogs" onClick={sliderHandler}>Back To Blog List</DelayLink>
+            </div>
           </div>
           <div className="blog-socials">
             <h3>Agree? Disagree? Let's Chat!</h3>
@@ -65,9 +68,6 @@ export default function BlogPage(props) {
                 </a>
               </li>
             </ul>
-            <div className="back-link">
-              <DelayLink id="back-link" delay={300} to="../Blogs" onClick={sliderHandler}>Back To Results</DelayLink>
-            </div>
           </div>
         </div>
 
