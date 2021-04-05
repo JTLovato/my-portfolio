@@ -4,21 +4,18 @@ import data from '../data';
 
 export default function BlogPage(props) {
   const blog = data.blogs.find((x) => x._id === props.match.params.id);
-
   const sliderHandler = () => {
     const slider = document.getElementById('slider');
-     slider.classList.add('slider-close');
+    slider.classList.add('slider-close');
       setTimeout(RemoveClass, 1000)
     }
     function RemoveClass() {
       const slider = document.getElementById('slider');
       slider.classList.remove('slider-close')
     }
-
   if (!blog) {
     return <div> Blog Not Found</div>;
   }
-
   return (
     <div>
       <div className="blog-container">
@@ -31,7 +28,6 @@ export default function BlogPage(props) {
             <img src="../img/quotes.png" alt="" />
           </h1>
         </div>
-
         <div className="blog-right half">
             <h1>{blog.title}</h1>
             <h5>{blog.subTitle}</h5>
@@ -70,7 +66,6 @@ export default function BlogPage(props) {
             </ul>
           </div>
         </div>
-
       </div>
     </div> 
   );

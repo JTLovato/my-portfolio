@@ -33,8 +33,83 @@ function App() {
   return (
     <BrowserRouter>
       <div className="app">
+        <header className="app-header-mobile">
+          <input id="burger" type="checkbox" />
+          <label for="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label>
+          <nav>    
+            <ul>
+              <li>       
+                <DelayLink delay={300} to="/homepage" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">home</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/coding" >
+                  <button className="button" onClick={sliderHandler}>
+                    <div className="button-content">
+                      <p className="button__text">coding</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/design" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">designs</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/blogs" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">blog</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/contact" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">contact</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/skills" >
+                  <button className="button" onClick={sliderHandler}>
+                    <div className="button-content">
+                      <p className="button__text">skills</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+              <DelayLink delay={300} to="/about" >
+                  <button className="button" onClick={sliderHandler}>
+                    <div className="button-content">
+                      <p className="button__text">about</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+            </ul>  
+          </nav>
+        </header>
         <header className="app-header">
-        <DelayLink delay={300} to="/homepage" >
+          <DelayLink delay={300} to="/homepage" >
             <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">home</p>
@@ -42,42 +117,42 @@ function App() {
             </button>
           </DelayLink>
           <DelayLink delay={300} to="/coding" >
-          <button className="button" onClick={sliderHandler}>
+            <button className="button" onClick={sliderHandler}>
               <div className="button-content">
                 <p className="button__text">coding</p>
               </div>
             </button>
           </DelayLink>
           <DelayLink delay={300} to="/design" >
-          <button className="button" onClick={sliderHandler} >
+            <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">designs</p>
               </div>
             </button>
           </DelayLink>
           <DelayLink delay={300} to="/blogs" >
-          <button className="button" onClick={sliderHandler} >
+            <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">blog</p>
               </div>
             </button>
           </DelayLink>
           <DelayLink delay={300} to="/contact" >
-          <button className="button" onClick={sliderHandler} >
+            <button className="button" onClick={sliderHandler} >
               <div className="button-content">
                 <p className="button__text">contact</p>
               </div>
             </button>
           </DelayLink>
           <DelayLink delay={300} to="/skills" >
-          <button className="button" onClick={sliderHandler}>
+            <button className="button" onClick={sliderHandler}>
               <div className="button-content">
                 <p className="button__text">skills</p>
               </div>
             </button>
           </DelayLink>
           <DelayLink delay={300} to="/about" >
-          <button className="button" onClick={sliderHandler}>
+            <button className="button" onClick={sliderHandler}>
               <div className="button-content">
                 <p className="button__text">about</p>
               </div>
