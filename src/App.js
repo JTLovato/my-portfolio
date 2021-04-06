@@ -1,6 +1,6 @@
 
 import './index.css';
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DelayLink from 'react-delay-link';
 import HomePage from './screens/HomePage'
@@ -28,23 +28,34 @@ function App() {
       const slider = document.getElementById('slider');
       slider.classList.remove('slider-close')
     }
-  
+
+
+    const myFunction = () => {
+      var menu = document.getElementById("menu");
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "block";
+      }
+    } 
+
+
 
   return (
     <BrowserRouter>
       <div className="app">
         <header className="app-header-mobile">
-          <input id="burger" type="checkbox" />
-          <label for="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-          </label>
-          <nav>    
-            <ul>
+
+
+        <div className="topnav">
+        <button className="icon" onClick={myFunction}>
+    <span>BUTTS</span>
+  </button>
+  <div id="menu">
+  <ul className="nav-ul">
               <li>       
                 <DelayLink delay={300} to="/homepage" >
-                  <button className="button" onClick={sliderHandler} >
+                  <button className="button"  >
                     <div className="button-content">
                       <p className="button__text">home</p>
                     </div>
@@ -106,7 +117,79 @@ function App() {
                 </DelayLink>
               </li>
             </ul>  
-          </nav>
+  </div>
+</div>
+
+
+
+        
+          {/* <nav id="nav">    
+            <ul>
+              <li>       
+                <DelayLink delay={300} to="/homepage" >
+                  <button className="button"   onClick={() => closeMenu()} >
+                    <div className="button-content">
+                      <p className="button__text">home</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/coding" >
+                  <button className="button" onClick={sliderHandler}>
+                    <div className="button-content">
+                      <p className="button__text">coding</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/design" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">designs</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/blogs" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">blog</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/contact" >
+                  <button className="button" onClick={sliderHandler} >
+                    <div className="button-content">
+                      <p className="button__text">contact</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+                <DelayLink delay={300} to="/skills" >
+                  <button className="button" onClick={sliderHandler}>
+                    <div className="button-content">
+                      <p className="button__text">skills</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+              <li>
+              <DelayLink delay={300} to="/about" >
+                  <button className="button" onClick={sliderHandler}>
+                    <div className="button-content">
+                      <p className="button__text">about</p>
+                    </div>
+                  </button>
+                </DelayLink>
+              </li>
+            </ul>  
+          </nav> */}
         </header>
         <header className="app-header">
           <DelayLink delay={300} to="/homepage" >
