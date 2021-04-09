@@ -25,8 +25,8 @@ export default function Coding() {
               className="code-button" 
               type="button" 
               onClick={() => setModalId(`modal${i}`)}>
-              <img className="code-img grey-image" alt={cod.title} src={cod.cover} />
-              <img className="code-img color-image"alt={cod.title} src={cod.cover_color} />
+              <img className="code-img grey-image" alt={cod.title} src={cod.cover} loading="lazy" />
+              <img className="code-img color-image"alt={cod.title} src={cod.cover_color} loading="lazy" />
             </Button>
             <Card.Title className="code-title" as="h4">{cod.title}</Card.Title>
           </Card.Body>
@@ -44,7 +44,7 @@ export default function Coding() {
                    <button onClick={handleClose}>X</button>
                    </div>
                    <div className="header-image-hold">
-                    <img src={cod.header} alt={cod.title} className="code-header" />
+                    <img src={cod.header} alt={cod.title} className="code-header" loading="lazy" />
                     </div>
                     <div className="code-info-container">
                     <a href={cod.link} className="modal-btn" data-hover="LETS GOOOO!"><p>Take Me There</p></a>

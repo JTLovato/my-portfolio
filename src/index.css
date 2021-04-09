@@ -198,7 +198,6 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 450px;
 }
 
 .card-around {
@@ -275,7 +274,10 @@ main {
   top: 0;
   left: 0;
   z-index: 1;
-  margin-bottom: 500px;
+}
+
+.homepage-bg2 {
+  display: none;
 }
 
 .homepage-link {
@@ -304,11 +306,11 @@ main {
 }
 
 @keyframes floatgoalie {
-  0% {}
-  25% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {right: 5%;}
+  25% {right: 10%;}
+  50% {margin-top: 42%;}
+  75% {right: 5%;}
+  100% {margin-top: 45%;}
 }
 
 .astro-blog {
@@ -320,11 +322,11 @@ main {
 }
 
 @keyframes floatblog {
-  0% {}
-  25% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {right: 50%;}
+  25% {right: 55%;}
+  50% {margin-top: 200%;}
+  75% {right: 50%;}
+  100% {margin-top: 210%;}
 }
 
 .astro-me {
@@ -337,11 +339,11 @@ main {
 }
 
 @keyframes floatme {
-  0% {}
-  25% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {right: 10%;}
+  25% {right: 8%;}
+  50% {margin-top: 240%;}
+  75% {right: 10%;}
+  100% {margin-top: 230%;}
 }
 
 .astro-code {
@@ -353,11 +355,11 @@ main {
 }
 
 @keyframes floatcode {
-  0% {}
-  25% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {right: 16%;}
+  25% {right: 20%;}
+  50% {margin-top: 100%;}
+  75% {right: 16%;}
+  100% {margin-top: 110%;}
 }
 
 .astro-contact {
@@ -369,11 +371,11 @@ main {
 }
 
 @keyframes floatcontact {
-  0% {}
-  25% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {right: 50%;}
+  25% {right: 55%;}
+  50% {margin-top: 8%;}
+  75% {right: 50%;}
+  100% {margin-top: 10%;}
 }
 
 .astro-skills {
@@ -385,11 +387,11 @@ main {
 }
 
 @keyframes floatskills {
-  0% {}
-  25% {}
-  50% {}
-  75% {}
-  100% {}
+  0% {right: 8%;}
+  25% {right: 3%;}
+  50% {margin-top: 2%;}
+  75% {right: 3%;}
+  100% {margin-top: 0%;}
 }
 
 .slider-close {
@@ -1405,6 +1407,19 @@ footer p {
     padding: 100px 50px 50px;
   }
 
+  .homepage-bg {
+    display: none;
+  }
+  
+  .homepage-bg2 {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
   .astro-goalie {
     width: 30%;
     right: 0.7%;
@@ -1424,6 +1439,7 @@ footer p {
   .astro-blog {
     width: 15%;
     right: 61%;
+    margin-top: 0%;
     transform: rotate(15deg);
     animation: floatblog 8s linear 0s infinite;
   }
@@ -1456,6 +1472,7 @@ footer p {
   .astro-code {
     width: 23%;
     right: 75%;
+    margin-top: 0%;
     transform: rotate(-10deg);
     animation: floatcode 8s linear -4s infinite;
   }
@@ -1471,6 +1488,7 @@ footer p {
   .astro-contact {
     width: 25%;
     right: 30%;
+    margin-top: 0%;
     transform: rotate(20deg);
     animation: floatcontact 8s linear -1s infinite;
   }

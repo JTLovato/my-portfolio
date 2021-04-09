@@ -19,6 +19,7 @@ export default function About() {
                         className="about-pic"
                         src="../img/me.png"
                         alt="A Profile Shot Of Me, John T Lovato"
+                        loading="lazy"
                     />
                 <div className="about-info-container">
                     <div className="about-info">

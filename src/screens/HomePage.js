@@ -47,6 +47,7 @@ export default function HomePage() {
                     </button>
                 </a>
                 <img className="homepage-bg" src="../img/bg.png" />
+                <img className="homepage-bg2" src="../img/bg2.png" />
             </div>
         </div>
     )

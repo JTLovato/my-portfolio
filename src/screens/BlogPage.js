@@ -33,7 +33,7 @@ export default function BlogPage(props) {
           <h1>Blog</h1>
         </div>
         <div className="blog-image-container">
-          <img src={blog.src} alt="" />
+          <img src={blog.src} alt="" loading="lazy"/>
           <div className="blog-image-deco"></div>
           <div className="blog-info">
             <h1>{blog.title}</h1>

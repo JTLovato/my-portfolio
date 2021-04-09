@@ -25,8 +25,8 @@ export default function Design() {
                 className="design-button" 
                 type="button" 
                 onClick={() => setModalId(`modal${i}`)}>
-                <img className="design-img grey-image" alt={des.title} src={des.cover} />
-                <img className="design-img color-image"alt={des.title} src={des.cover_color} />
+                <img className="design-img grey-image" alt={des.title} src={des.cover} loading="lazy" />
+                <img className="design-img color-image"alt={des.title} src={des.cover_color} loading="lazy" />
               </Button>
               <Card.Title className="design-title" as="h4">{des.title}</Card.Title>
             </Card.Body>
@@ -44,6 +44,7 @@ export default function Design() {
                           className="d-block w-100"
                           src={des.src1}
                           alt="First slide"
+                          loading="lazy"
                           />
                           <Carousel.Caption>
                             <h3>{des.slide1}</h3>
@@ -55,6 +56,7 @@ export default function Design() {
                           className="d-block w-100"
                           src={des.src2}
                           alt="Second slide"
+                          loading="lazy"
                           />
                           <Carousel.Caption>
                             <h3>{des.slide2}</h3>
@@ -66,6 +68,7 @@ export default function Design() {
                           className="d-block w-100"
                           src={des.src3}                               
                           alt="Third slide"
+                          loading="lazy"
                           />
                           <Carousel.Caption>
                             <h3>{des.slide3}</h3>
@@ -77,6 +80,7 @@ export default function Design() {
                           className="d-block w-100"
                           src={des.src4}
                           alt="Fourth slide"
+                          loading="lazy"
                           />
                           <Carousel.Caption>
                             <h3>{des.slide4}</h3>
