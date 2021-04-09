@@ -1,6 +1,5 @@
 import React from 'react';
 import DelayLink from 'react-delay-link';
-import Blogs from '../Blogs';
 import data from '../data';
 
 
