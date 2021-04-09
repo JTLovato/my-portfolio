@@ -1401,10 +1401,18 @@ footer p {
 
 /* Media Queries */
 
-@media (min-width: 1024px) { 
+@media (min-width: 768px) { 
 
   main {
     padding: 100px 50px 50px;
+  }
+
+  .app-header-mobile {
+    display: none;
+  }
+  
+  .app-header {
+    display: flex;
   }
 
   .homepage-bg {
@@ -1527,9 +1535,9 @@ footer p {
     height: 500px;
     width: 250px;
     z-index: 2;
- }
+  }
 
- .contact-container a .color  {
+.contact-container a .color  {
   position: absolute;
   top: 0;
   right: 0;
