@@ -31,13 +31,6 @@ function App() {
 
     const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
 
-
-    const closeSideBar = () => {
-      setSidebarIsOpen(false)
-      }
-
-
-
   return (
     <BrowserRouter>
       <div className="app">
@@ -49,10 +42,10 @@ function App() {
               className="open-sidebar"
               onClick={() => setSidebarIsOpen(true)}
             >
-              <div class="menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+              <div className="menu">
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
               </div>
             </button>
             <aside className={sidebarIsOpen ? 'open': ''}>

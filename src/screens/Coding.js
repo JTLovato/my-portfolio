@@ -39,7 +39,10 @@ export default function Coding() {
           >
               <Modal.Body>
                  <div className="code-modal-container">
+                   <div className="modal-header">
                    <h1 className="code-title">{cod.title}</h1>
+                   <button onClick={handleClose}>X</button>
+                   </div>
                    <div className="header-image-hold">
                     <img src={cod.header} alt={cod.title} className="code-header" />
                     </div>
