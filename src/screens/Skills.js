@@ -12,7 +12,7 @@ export default function Skills() {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
-                            <img src="../img/codingcard.jpg" alt="" />
+                            <img src="../img/codingcard.jpg" alt="Card Backside" />
                         </div>
                         <div className="flip-card-back">
                             <div className="card-lettering">
@@ -63,7 +63,7 @@ export default function Skills() {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
-                            <img src="../img/designcard.jpg" alt="" />
+                            <img src="../img/designcard.jpg" alt="Card Backside" />
                         </div>
                         <div className="flip-card-back">
                             <div className="card-lettering">
@@ -113,7 +113,7 @@ export default function Skills() {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="flip-card-front">
-                            <img src="../img/skillcard.jpg" alt="" />
+                            <img src="../img/skillcard.jpg" alt="Card Backside" />
                         </div>
                         <div className="flip-card-back">
                             <div className="card-lettering">

@@ -24,7 +24,7 @@ export default function Contact() {
                 <div className="bg-color bg-address">
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/john-lovato-4295b3199/" className="link-container linkedin">
+            <a href="https://www.linkedin.com/in/johntlovato/" className="link-container linkedin">
                 <img src="./img/linkedin.jpg" className="color" alt="LinkedIn icon" />
                 <img src="./img/linkedin-grey.jpg" className="grey" alt="LinkedIn icon" />
                 <div className="bg-color bg-linkedin">
